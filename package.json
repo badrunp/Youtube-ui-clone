@@ -10,7 +10,7 @@
     "tailwindcss": "^2.2.2"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/tailwind.css -o ./css/app.css"
+    "dev": "npx tailwindcss -i ./css/tailwind.css -c ./tailwind.config.js -o ./css/app.css"
   },
   "repository": {
     "type": "git",

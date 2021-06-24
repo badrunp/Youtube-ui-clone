@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: [
     './src/**/*.html',
@@ -5,8 +7,19 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        rose: colors.rose
+      },
+      spacing:{
+        '18': '74px'
+      }
+    },
   },
-  variants: {},
+  variants: {
+    extend:{
+      overflow: ['hover', 'focus'],
+    }
+  },
   plugins: [],
 }
